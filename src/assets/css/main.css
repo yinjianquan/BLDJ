@@ -1,0 +1,35 @@
+*{margin: 0;padding: 0;/*版心宽度1275px*/}
+ul li, ol li { list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+a { text-decoration: none; color: inherit;}
+body,html{height:100%;background: #f5f5f5;}
+.fl{float:left;font-size: 12px; color:#a6a6a6;}
+.fr{float:right}
+.pr{position:relative}
+.ta-l{text-align:left}
+.hide{display: none;}
+.ta-c{text-align:center}
+.ta-r{text-align:right}
+.clearfix{display:inline-table;display:block;zoom:1}
+.clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden}
+/*头部*/
+.header{width: 1200px;background: #f5f5f5;margin: 0 auto;height: 36px;}
+.header-left{display: inline-block;float: left;font-size: 14px;height: 36px;line-height: 36px;color: #333333;margin-left: 9px;cursor: pointer;}
+.header-left:hover i{background: url(../images/logo_pic.png) -287px -124px no-repeat}
+.header-right{display: inline-block;float: right;height: 36px;line-height: 36px;color: #696969;font-size: 13px;}
+.header-right .right-list .diff-list:hover i{background: url(../images/logo_pic.png) -287px -124px no-repeat}
+.childchoose{width: 8px;height: 7px;display: inline-block;background: url(../images/logo_pic.png) -276px -124px no-repeat;margin-left: 8px;}
+.right-list .list{float: left;cursor: pointer;}
+.fenjie{margin-right: 15px;margin-left: 15px;color: #d2d2d2;}
+/*导航栏*/
+.nav-bar-outer{background: #ff7029;height: 84px;width:100%;}
+.nav-bar{margin:  0 auto;width:1200px;height: 84px;background: url(../images/header-bg.png) no-repeat;}
+.nav-list{float:left;margin-top:39px;margin-left:293px;}
+.nav-choose{float: left;font-size: 16px;color: #ffffff;}
+.nav-index{margin-left: 62px;cursor: pointer;}
+.nav-user{margin-left: 43px;cursor: pointer;}
+.nav-user-choose{display: inline-block;width: 12px;height: 7px;background: url(../images/logo_pic.png) no-repeat;background-position: -325px -121px;margin-left: 7px;}
+.nav-user:hover i{background: url(../images/logo_pic.png) -340px -117px no-repeat;}
+.nav-news{margin-left: 39px;position: relative;cursor: pointer;}
+.nav-help{margin-left:39px;cursor:pointer;}
+.tip-news{position: absolute;left: 33px;top: -19px;width:24px ;height: 24px;background: url(../images/logo_pic.png) no-repeat;background-position: -657px -111px;color: #d35b55;text-align: center;line-height:24px ;font-size: 12px;font-family: arial;font-weight: bold;}
