@@ -1,26 +1,38 @@
-
-// 这里面负责写路由映射，便于管理
-
-
-// 引入路由模块并使用它
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+import Router from 'vue-router'
+// import Hello from '@/components/Hello'
 
+import main from '@/components/main'
+import only from '@/components/only'
+import orderManage from '@/components/orderManage'
+import member from '@/components/member'
 
+Vue.use(Router)
 
-// 创建路由实例并配置路由映射  
-// path:'*',redirect:'/home'  重定向到path是/home的映射
-const router = new VueRouter({
-  routes:[{
-      path: '/member', component: require('../components/member.vue')
-  },{
-      path: '/orderManage', component: require('../components/orderManage.vue')
-  },{
-      path:'*',redirect:'/member'
-  }]
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'main',
+      component: main
+    },
+    {
+      path: '/only',
+      name: 'only',
+      component: only,
+      children:[
+        {       
+          path: '/only/orderManage',
+          name: 'orderManage',
+          component: orderManage
+        },
+        {
+          path: '/only/member',
+          name: 'member',
+          component: member
+        }
+      ]
+    }
+
+  ]
 })
-
-
-// 输出router
-export default router;

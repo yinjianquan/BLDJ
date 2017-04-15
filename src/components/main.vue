@@ -1,107 +1,42 @@
 <template>
-  <div class="outer">
-   <div class="header">
-       <!--<div class="header-main">
-         <div class="back_index"><img src="../assets/images/backindex.png" alt=""></div>
-        </div>-->
-      <div class="header-left diff-list"><span>以夏末为名</span>&nbsp;&nbsp;<span>退出</span></div>
-      <div class="header-right">
-        <ul class="right-list">
-          <li class="list diff-list">我的便利<i class="childchoose "></i><span class="fenjie">|</span></li>          
-          <li class="list ">会员<span class="fenjie">|</span></li>         
-          <li class="list diff-list">手机APP<i class="childchoose "></i><span class="fenjie">|</span></li>   
-          <li class="list diff-list">关注公众号<i class="childchoose "></i><span class="fenjie">|</span></li>       
-          <li class="list diff-list">QQ服务<i class="childchoose "></i><span class="fenjie">|</span></li>
-          <li class="list diff-list">平台客服<i class="childchoose"></i></li>
-        </ul>
-      </div>
-   </div> 
-   <div class="nav-bar-outer">
-      <div class="nav-bar">
-            <div class="back_index" style="float:left;"><img src="../assets/images/backindex.png" alt=""></div>
-            <ul class="nav-list">
-              <li class="nav-choose nav-index">首页</li>
-              <li class="nav-choose nav-user">账户设置<i class="nav-user-choose"></i></li>
-              <li class="nav-choose nav-news">消息<span class="tip-news">3</span></li>
-               <li class="nav-choose nav-help">帮助</li>
-            </ul>
-      </div>
-    </div>
-  <div class="mainbody-outer"> 
-      <div class="main_outer" style="width:1198px;margin:0 auto;">
-          <div class="main_header_nav" style="height:78px;">
-            <ul>
-               <li><div>便利购</div></li>
-               <li><div class="cli">便利淘</div></li>
-               <li><div>便利筹</div></li>
-            </ul>
-          </div>
-          <div class="main_header_info user-info" style="width:100%;">
-            <div class="user-head">
-            <div class="fl photo"><a href="/index.php?act=member&op=avatar" ><img src="http://upload.lexiangquan.com/shop/common/default_user_portrait.gif" width="94"></a></div>
-            <div class="fl info">
-                <p class="name">150123456754</p>
-                <p class="safety">超级管理员</p>
-            </div>
-            </div>
-            <div class="user-data">
-                <div class="year-rate clearfix">
-                    <div class="fl progress"><span><em style="height: 80%;"></em></span></div>
-                    <div class="fl">
-                        <p class="tit">年化收益<i></i></p>
-                        <p class="rate"><em>0</em><span>(%)</span></p>
-                    </div>
-                        <i style="display: inline-block; background:url(../static/images/mywallet.png) no-repeat;background-position:-31px -432px ; width: 24px; height: 34px; margin-left: 25px; margin-top: 21px;"></i>
-                </div>
-                <div class="day-earnings">
-                    <p class="tit">今日收益</p>
-                    <p class="rate"><em>0.007</em></p>
-                </div>
-                <div class="item already">
-                    <p class="number">0</p>
-                    <p class="txt">已存入订单</p>
-                </div>
-                <div class="item doingNow">
-                    <p class="number">0</p>
-                    <p class="txt">订单进行中</p>
-                </div>
-                <div class="item outDate">
-                    <p class="number">0</p>
-                    <p class="txt">无效订单</p>
-                </div>
-                </div>
-              </div>
-           <!--主题内容-->
-            <div class="mainbody">
-                <div class="left-menu">
-                  <a class="item active"  href="#"><i class="i-0"><em></em></i><span>我的便利淘</span></a>
-                  <a class="item" href="#"><i class="i-1" ><em></em></i><span>用户订单管理</span></a>
-                  <a class="item " href="#"><i class="i-2" ><em></em></i><span>用户收益管理</span></a>
-                  <a class="item " href="#"><i class="i-3" ><em></em></i><span>用户提现管理</span></a>
-                  <a class="item " href="#"><i class="i-4" ><em></em></i><span>推广收益管理</span></a>
-                  <a class="item " href="#"><i class="i-5" ><em></em></i><span>推广补贴管理</span></a>
-                  <a class="item " href="#"><i class="i-7" ><em></em></i><span>商户返佣管理</span></a>
-                  <a class="item " href="#"><i class="i-8" ><em></em></i><span>签约商户管理</span></a>
-                  <a class="item " href="#"><i class="i-9" ><em></em></i><span>会员收费管理</span></a>
-                  <a class="item " href="#"><i class="i-10" ><em></em></i><span>子账号管理</span></a>
-                </div>
-                <div class="right-con">
-                   <ul>
-                     <li><div class="xiaopiao"><i class="tie">16</i></div></li>
-                     <li><div class="tixian"></div></li>
-                   </ul>
-                   <p><router-link to="page">点击跳到页面</router-link></p>
-                 </div>
-
+  <div class="main">
+    <div class="outer">
+    <div class="header">
+        <!--<div class="header-main">
+          <div class="back_index"><img src="../assets/images/backindex.png" alt=""></div>
+          </div>-->
+        <div class="header-left diff-list"><span>以夏末为名</span>&nbsp;&nbsp;<span>退出</span></div>
+        <div class="header-right">
+          <ul class="right-list">
+            <li class="list diff-list">我的便利<i class="childchoose "></i><span class="fenjie">|</span></li>          
+            <li class="list ">会员<span class="fenjie">|</span></li>         
+            <li class="list diff-list">手机APP<i class="childchoose "></i><span class="fenjie">|</span></li>   
+            <li class="list diff-list">关注公众号<i class="childchoose "></i><span class="fenjie">|</span></li>       
+            <li class="list diff-list">QQ服务<i class="childchoose "></i><span class="fenjie">|</span></li>
+            <li class="list diff-list">平台客服<i class="childchoose"></i></li>
+          </ul>
+        </div>
+    </div> 
+    <div class="nav-bar-outer">
+        <div class="nav-bar">
+              <div class="back_index" style="float:left;"><img src="../assets/images/backindex.png" alt=""></div>
+              <ul class="nav-list">
+                <li class="nav-choose nav-index">首页</li>
+                <li class="nav-choose nav-user">账户设置<i class="nav-user-choose"></i></li>
+                <li class="nav-choose nav-news">消息<span class="tip-news">3</span></li>
+                <li class="nav-choose nav-help">帮助</li>
+              </ul>
         </div>
       </div>
-     
-   </div>
+    </div>
+    <only></only>
   </div>
+    
 </template>
 
 <script>
 import jquery from "../assets/js/jquery.min.js"
+import only from './only.vue'
 export default {
   name: 'main',
   data () {
@@ -115,8 +50,14 @@ export default {
               $(this).parent().siblings().find("div").css({"color":"#696969","background":"url(../static/images/icon_tie1.png) no-repeat","transform":"translateY(0px)","transition":"transform 0.7s"});
           });
         // 竖直导航菜单
+        //  $(".left-menu a").click(function(){
+        //    $(this).$router.go('https://www.baidu.com/');
+        //  });
         })
-    }
+    },
+  components: {
+    only
+  }
  
 }
 </script>
