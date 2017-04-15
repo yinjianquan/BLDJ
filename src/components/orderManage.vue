@@ -3,9 +3,9 @@
     <div class="order_head">
         <div class="order_tab">
           <ul>
-            <li class="selected">淘宝</li>
+            <li>淘宝</li>
             <li>京东</li>
-            <li>小票</li>
+            <li class="selected">小票</li>
           </ul>
         </div>
         <div class="search_parms">
